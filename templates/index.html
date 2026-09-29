@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EduGenie</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="hero">
+
+    <div class="container">
+
+        <div class="badge">
+            AI Learning Assistant
+        </div>
+
+        <h1>
+            EduGenie
+        </h1>
+
+        <p>
+            Your AI-powered learning assistant
+        </p>
+
+    </div>
+
+</header>
+
+
+<main class="container layout">
+
+
+    <!-- INPUT CARD -->
+
+    <section class="card">
+
+        <h2>
+            Learning Assistant
+        </h2>
+
+
+        <label for="task">
+            Choose a task
+        </label>
+
+
+        <select id="task">
+
+            <option value="qa">
+                Ask a Question
+            </option>
+
+            <option value="explain">
+                Explain a Concept
+            </option>
+
+            <option value="quiz">
+                Generate Quiz
+            </option>
+
+            <option value="summarize">
+                Summarize Text
+            </option>
+
+            <option value="learn">
+                Learning Path
+            </option>
+
+        </select>
+
+
+        <!-- LEVEL -->
+
+        <div
+            id="levelWrap"
+            class="hidden"
+        >
+
+            <label for="level">
+                Learner Level
+            </label>
+
+            <select id="level">
+
+                <option value="beginner">
+                    Beginner
+                </option>
+
+                <option value="intermediate">
+                    Intermediate
+                </option>
+
+                <option value="advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- INPUT -->
+
+        <label for="input">
+            Enter your content
+        </label>
+
+
+        <textarea
+            id="input"
+            rows="10"
+            placeholder="Type your question, concept, topic or text..."
+        ></textarea>
+
+
+        <button id="run">
+            Run EduGenie
+        </button>
+
+
+        <p
+            id="status"
+            class="status"
+        ></p>
+
+    </section>
+
+
+    <!-- RESULT CARD -->
+
+    <section class="card result-card">
+
+        <div class="result-head">
+
+            <h2>
+                Result
+            </h2>
+
+            <button
+                id="copy"
+                class="secondary"
+            >
+                Copy
+            </button>
+
+        </div>
+
+
+        <div
+            id="result"
+            class="result empty"
+        >
+            Your result will appear here.
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="container footer">
+
+    EduGenie
+    |
+    FastAPI
+    |
+    Google Gemini
+    |
+    SQLite
+
+</footer>
+
+
+<script src="/static/app.js"></script>
+
+</body>
+
+</html>

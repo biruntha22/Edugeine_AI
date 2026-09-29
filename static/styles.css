@@ -1,0 +1,393 @@
+:root {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #172033;
+
+    background: #f5f7fb;
+
+    line-height: 1.6;
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+
+}
+
+
+.container {
+
+    width: min(
+        1100px,
+        92%
+    );
+
+    margin: auto;
+
+}
+
+
+/* HERO */
+
+.hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #253b80,
+            #5b3aa8
+        );
+
+    color: white;
+
+    padding:
+        55px
+        0
+        45px;
+
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.3
+        );
+
+    border-radius: 30px;
+
+    padding:
+        6px
+        14px;
+
+    font-size: 14px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 48px;
+
+    margin:
+        12px
+        0
+        5px;
+
+}
+
+
+.hero p {
+
+    margin: 0;
+
+    opacity: 0.9;
+
+}
+
+
+/* LAYOUT */
+
+.layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 24px;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* CARD */
+
+.card {
+
+    background: white;
+
+    border:
+        1px solid
+        #e3e7ef;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            20,
+            30,
+            60,
+            0.06
+        );
+
+}
+
+
+.card h2 {
+
+    margin-top: 0;
+
+}
+
+
+/* FORM */
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin:
+        17px
+        0
+        7px;
+
+}
+
+
+select,
+textarea {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #d6dbe7;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    background: white;
+
+}
+
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+/* BUTTON */
+
+button {
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding:
+        12px
+        20px;
+
+    background: #4059d8;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 18px;
+
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+button:disabled {
+
+    opacity: 0.6;
+
+    cursor: wait;
+
+}
+
+
+.secondary {
+
+    background: #eef1ff;
+
+    color: #3047a3;
+
+    margin-top: 0;
+
+}
+
+
+/* RESULT */
+
+.result-card {
+
+    min-height: 450px;
+
+}
+
+
+.result-head {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.result {
+
+    white-space: pre-wrap;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.empty {
+
+    color: #7b8495;
+
+}
+
+
+.status {
+
+    min-height: 24px;
+
+    color: #596276;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* QUIZ */
+
+.quiz-q {
+
+    border:
+        1px solid
+        #e0e4ec;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin:
+        12px
+        0;
+
+}
+
+
+.quiz-q strong {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+}
+
+
+.option {
+
+    background: #f5f6f9;
+
+    border-radius: 8px;
+
+    padding: 8px;
+
+    margin: 5px 0;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    padding:
+        25px
+        0
+        45px;
+
+    color: #737c8f;
+
+    font-size: 14px;
+
+}
+
+
+/* MOBILE */
+
+@media (
+    max-width: 760px
+) {
+
+    .layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+}
